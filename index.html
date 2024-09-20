@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music CD's</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Music CD's</h1>
+    </header>
+    <main>
+    <form id="frmCD">
+        <div>
+            <label for="txtAuthor">Artist</label>
+            <input type="text" id="txtAuthor" name="author" required>
+        </div>
+        <div>
+            <label for="txtTitle">Title</label>
+            <input type="text" id="txtTitle" name="title" required>
+        </div>
+        <div>
+            <label for="txtYear">Year</label>
+            <input type="text" id="txtYear" name="year" maxlength="4" minlength="4" pattern="^\d{4}$" required>
+        </div>
+        <input type="submit" value="Add" id="submitBtn">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Artist</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cdTableBody">
+
+        </tbody>
+    </table>
+    </main>   
+</body>
+</html>

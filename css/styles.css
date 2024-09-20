@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --colorTextSecondary: #F2F2F2;
+    --colorTextPrimay: #011526;
+
+    --colorPrimary: #025959;
+
+    --fontMain: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--fontMain);
+
+    @media (min-width: 1023px) {
+        padding: 5rem 25rem;
+    }
+}
+
+header {
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+}
+
+main {
+    padding: 0.5rem;
+    line-height: 1.4rem;
+}
+
+form > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0.8rem 0.4rem;
+    margin-bottom: 1rem;
+
+    #txtAuthor, #txtTitle {
+        width: 70%;
+    }
+}
+
+input[type=submit]{
+    border: none;
+    background-color: var(--colorPrimary);
+    color: #F2F2F2;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border: 1px solid var(--colorPrimary);
+
+    thead, th{
+        background-color: var(--colorPrimary);
+        color: var(--colorTextSecondary);
+        border: 1px solid var(--colorTextSecondary);
+        text-align: start;
+        padding: 0.5rem;
+    }
+
+    th:last-child, td:last-child {
+        text-align: center;
+    }
+
+    tbody td{
+        padding: 0.5rem;
+    }
+    
+    .deleteCdBtn{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .deleteCdBtn:hover{
+        scale: 1.2;
+    }
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: center;
+}
